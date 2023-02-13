@@ -1,21 +1,19 @@
-import vueI18n from '@intlify/vite-plugin-vue-i18n';
-import legacy from '@vitejs/plugin-legacy';
-import vue from '@vitejs/plugin-vue';
-import vueJsx from '@vitejs/plugin-vue-jsx';
-import path from 'path';
-import AutoImport from 'unplugin-auto-import/vite';
-import IconsResolver from 'unplugin-icons/resolver';
-import Icons from 'unplugin-icons/vite';
-import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';
-import Components from 'unplugin-vue-components/vite';
-import type { UserConfigExport } from 'vite';
-import eslintPlugin from 'vite-plugin-eslint';
-import html from 'vite-plugin-html';
-import Inspect from 'vite-plugin-inspect';
-import vueSetupExtend from 'vite-plugin-vue-setup-extend';
-import svgLoader from 'vite-svg-loader';
+import legacy from '@vitejs/plugin-legacy'
+import vue from '@vitejs/plugin-vue'
+import vueJsx from '@vitejs/plugin-vue-jsx'
+import path from 'path'
+import AutoImport from 'unplugin-auto-import/vite'
+import IconsResolver from 'unplugin-icons/resolver'
+import Icons from 'unplugin-icons/vite'
+import Components from 'unplugin-vue-components/vite'
+import type { UserConfigExport } from 'vite'
+import eslintPlugin from 'vite-plugin-eslint'
+import { createHtmlPlugin } from 'vite-plugin-html'
+import Inspect from 'vite-plugin-inspect'
+import vueSetupExtend from 'vite-plugin-vue-setup-extend'
+import svgLoader from 'vite-svg-loader'
 function resolve(dir: string) {
-  return path.join(__dirname, dir);
+  return path.join(__dirname, dir)
 }
 
 // https://vitejs.dev/config/
@@ -39,12 +37,8 @@ export default function (): UserConfigExport {
     },
     plugins: [
       vueSetupExtend(),
-      html({
-        inject: {
-          data: {
-            title: 'KuggaMax'
-          }
-        },
+      createHtmlPlugin({
+        inject: { data: { title: 'JUNDE' } },
         minify: true
       }),
       Icons({
@@ -54,13 +48,7 @@ export default function (): UserConfigExport {
         defaultImport: 'raw' // or 'url'
       }),
       Inspect(),
-      vueI18n({
-        // if you want to use Vue I18n Legacy API, you need to set `compositionOnly: false`
-        // you need to set i18n resource including paths !
-        include: resolve('./src/i18n/**')
-      }),
       AutoImport({
-        resolvers: [ElementPlusResolver()],
         eslintrc: {
           enabled: true, // Default `false`
           filepath: './.eslintrc-auto-import.json', // Default `./.eslintrc-auto-import.json`
@@ -76,8 +64,7 @@ export default function (): UserConfigExport {
           // 自动注册图标组件
           IconsResolver({
             enabledCollections: ['ep']
-          }),
-          ElementPlusResolver()
+          })
         ],
         dts: resolve('src/components.d.ts')
       }),
@@ -95,5 +82,5 @@ export default function (): UserConfigExport {
         '@': resolve('./src')
       }
     }
-  };
+  }
 }

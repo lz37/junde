@@ -1,5 +1,13 @@
 {
   "globals": {
+    "Component": true,
+    "ComponentPublicInstance": true,
+    "ComputedRef": true,
+    "EffectScope": true,
+    "InjectionKey": true,
+    "PropType": true,
+    "Ref": true,
+    "VNode": true,
     "computed": true,
     "createApp": true,
     "createLogger": true,
@@ -9,11 +17,12 @@
     "defineAsyncComponent": true,
     "defineComponent": true,
     "effectScope": true,
-    "EffectScope": true,
     "getCurrentInstance": true,
     "getCurrentScope": true,
     "h": true,
     "inject": true,
+    "isProxy": true,
+    "isReactive": true,
     "isReadonly": true,
     "isRef": true,
     "mapActions": true,
@@ -24,6 +33,8 @@
     "nextTick": true,
     "onActivated": true,
     "onBeforeMount": true,
+    "onBeforeRouteLeave": true,
+    "onBeforeRouteUpdate": true,
     "onBeforeUnmount": true,
     "onBeforeUpdate": true,
     "onDeactivated": true,
@@ -52,11 +63,14 @@
     "useCssModule": true,
     "useCssVars": true,
     "useI18n": true,
+    "useLink": true,
     "useRoute": true,
     "useRouter": true,
     "useSlots": true,
     "useStore": true,
     "watch": true,
-    "watchEffect": true
+    "watchEffect": true,
+    "watchPostEffect": true,
+    "watchSyncEffect": true
   }
 }

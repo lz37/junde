@@ -1,0 +1,38 @@
+.button {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 10px;
+
+  height: 42px;
+
+  /* 红渐变 */
+
+  background: linear-gradient(180deg, #ff2727 0%, #e23030 100%);
+  box-shadow: 0px 6px 24px rgba(255, 0, 0, 0.36);
+  border-radius: 0px 18px 18px 12px;
+  border-width: 0;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.text {
+  width: 117px;
+  height: 26px;
+  left: 24px;
+  top: 8px;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+

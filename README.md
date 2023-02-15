@@ -16,7 +16,3 @@ Since TypeScript cannot handle type information for `.vue` imports, they are shi
 
 [iconify](https://icon-sets.iconify.design/)
 
-## login preview
-
-![login preview](./public/login-preview.png)
-![login preview](./public/1650566449.jpg)

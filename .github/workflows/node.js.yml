@@ -1,4 +1,4 @@
-name: pnpm Example Workflow
+name: JUNDE
 on:
   push:
     branches: [ "master" ]
@@ -20,4 +20,11 @@ jobs:
         cache: 'pnpm'
     - name: Install dependencies
       run: pnpm install
-    - run: pnpm build
+    - name: Build
+      run: pnpm run build
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      if: ${{ github.ref == 'refs/heads/main' }}
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist

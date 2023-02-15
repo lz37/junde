@@ -6,6 +6,10 @@ export default defineComponent({
     timeout: {
       type: Number,
       default: 1000
+    },
+    mode: {
+      type: String as PropType<'slide-fade' | 'nested'>,
+      required: true
     }
   },
   setup(props, { slots }) {
@@ -16,7 +20,7 @@ export default defineComponent({
       }, props.timeout)
     })
     return () => (
-      <Transition name="nested">
+      <Transition name={props.mode}>
         {() => {
           if (show.value) {
             return <div>{slots.default?.()}</div>

@@ -5,7 +5,7 @@ export default defineComponent({
   setup() {
     return () => (
       <div class={style.menu}>
-        <img src={Icon} class={style.icon} />
+        <img src={Icon} class={style.icon} alt="icon" />
         <Button class={style.top65} style={{ marginLeft: '128px' }} mode="text">
           Home
         </Button>

@@ -9,4 +9,13 @@
   height: 440px;
   left: 980px;
   top: 170px;
+  z-index: 0;
+}
+
+.img38 {
+  position: absolute;
+  width: 557px;
+  height: 520px;
+  left: 736px;
+  top: 242px;
 }

@@ -11,6 +11,7 @@ declare module '@vue/runtime-core' {
     CHeader: typeof import('./components/CHeader/index.vue')['default']
     CHeaderInner: typeof import('./components/CHeaderInner/index.vue')['default']
     CLayout: typeof import('./components/CLayout/index.vue')['default']
+    DImage: typeof import('./components/DImage/index.tsx')['default']
     ElAside: typeof import('element-plus/es')['ElAside']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']

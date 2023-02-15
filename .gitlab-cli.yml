@@ -7,11 +7,7 @@ cache:
 before_script:
   - pnpm install
 
-pages:
-  script:
-    - pnpm run build
-  artifacts:
-    paths:
-      - dist
-  only:
-    - master
+deploy:
+  stage: deploy
+  script: echo "Define your deployment script!"
+  environment: production

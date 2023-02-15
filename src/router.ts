@@ -4,9 +4,11 @@ import {
   RouteLocationRaw,
   Router
 } from 'vue-router'
+const mode = import.meta.env.MODE
 
 const router: Router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(mode === 'development' ? '/' : '/junde/'),
+
   routes: [
     {
       path: '/',

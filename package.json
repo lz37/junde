@@ -4,7 +4,7 @@
   "description": "Vite + ElementPlus + Vue3 + TS + Vue-Router4 + Vuex4 + Vue-use + Vue-i18n PC Template",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vue-tsc --noEmit && vite build --base /junde/",
     "serve": "vite preview",
     "lint:fix": "eslint --ext .ts,.tsx,.vue --fix ."
   },

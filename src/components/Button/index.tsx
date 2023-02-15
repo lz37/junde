@@ -1,4 +1,4 @@
-import { PropType } from 'vue'
+import { PropType, StyleValue } from 'vue'
 import redStyle from './red.module.css'
 import whiteStyle from './white.module.css'
 import textStyle from './text.module.css'
@@ -14,6 +14,9 @@ export default defineComponent({
     mode: {
       type: String as PropType<'red' | 'white' | 'text'>,
       required: true
+    },
+    buttonStyle: {
+      type: Object as PropType<StyleValue | undefined>
     }
   },
   emits: ['click'],
@@ -23,6 +26,7 @@ export default defineComponent({
         <button
           class={modeStyle[props.mode].button}
           onClick={() => emit('click')}
+          style={props.buttonStyle}
         >
           <span class={modeStyle[props.mode].text}>{slots.default?.()}</span>
         </button>

@@ -28,6 +28,11 @@ export default function (): UserConfigExport {
       }
     },
     css: {
+      modules: {
+        generateScopedName: '[name]__[local]___[hash:base64:5]',
+        hashPrefix: 'prefix',
+        localsConvention: 'camelCaseOnly'
+      },
       preprocessorOptions: {
         scss: {
           // 自定义的主题色

@@ -28,12 +28,15 @@ declare module '@vue/runtime-core' {
     IEpFiles: typeof import('~icons/ep/files')['default']
     IEpList: typeof import('~icons/ep/list')['default']
     IEpUser: typeof import('~icons/ep/user')['default']
+    Image: typeof import('./components/Image/index.tsx')['default']
+    Introduction: typeof import('./components/Introduction/index.tsx')['default']
     Layout: typeof import('./components/Layout/index.tsx')['default']
     Logo: typeof import('./components/logo/index.tsx')['default']
     Menu: typeof import('./components/Menu/index.tsx')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TextButton: typeof import('./components/Menu/TextButton/index.tsx')['default']
+    Title: typeof import('./components/Introduction/Title/index.tsx')['default']
     Trans: typeof import('./components/Trans/index.tsx')['default']
   }
 }

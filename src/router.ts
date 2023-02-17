@@ -4,16 +4,16 @@ import {
   RouteLocationRaw,
   Router
 } from 'vue-router'
-const mode = import.meta.env.MODE
+const baseUrl = import.meta.env.BASE_URL
 
 const router: Router = createRouter({
-  history: createWebHistory(mode === 'development' ? '/' : '/junde/'),
+  history: createWebHistory(baseUrl),
 
   routes: [
     {
       path: '/',
       name: 'Home',
-      component: () => import('@/views/home')
+      component: () => import('@/views/Home')
     }
   ]
 })

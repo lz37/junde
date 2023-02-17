@@ -14,3 +14,7 @@ body {
   src: url(@/assets/fonts/Poppins-Medium.ttf);
 }
 
+/* x scrollbar hide */
+::-webkit-scrollbar {
+  display: none;
+}

@@ -4,10 +4,6 @@ import '@/styles/global.css'
 
 export default defineComponent({
   setup() {
-    return () => (
-      <>
-        <RouterView />
-      </>
-    )
+    return () => <RouterView />
   }
 })

@@ -5,5 +5,9 @@
 }
 
 .left {
+  border-radius: 150px 0px 50px 150px;
+}
+
+.right{
   border-radius: 0px 150px 150px 50px;
 }

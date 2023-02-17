@@ -1,4 +1,5 @@
-import { Transition } from 'vue'
+import { PropType, StyleValue, Transition, TransitionGroup } from 'vue'
+import DCard, { IconsTitle } from '@/components/DCard'
 import './trans.css'
 
 export default defineComponent({
@@ -10,7 +11,9 @@ export default defineComponent({
     mode: {
       type: String as PropType<'slide-fade' | 'nested'>,
       required: true
-    }
+    },
+    style: Object as PropType<StyleValue>,
+    class: String
   },
   setup(props, { slots }) {
     const show = ref(false)
@@ -20,13 +23,15 @@ export default defineComponent({
       }, props.timeout)
     })
     return () => (
-      <Transition name={props.mode}>
-        {() => {
-          if (show.value) {
-            return <div>{slots.default?.()}</div>
-          }
-        }}
-      </Transition>
+      <div style={props.style} class={props.class}>
+        <Transition name={props.mode}>
+          {() => {
+            if (show.value) {
+              return <div>{slots.default?.()}</div>
+            }
+          }}
+        </Transition>
+      </div>
     )
   }
 })

@@ -1,0 +1,49 @@
+.part {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+.introduce1 {
+  position: inherit;
+  left: 147px;
+  top: 127px;
+}
+
+.introduce2 {
+  position: inherit;
+  left: 833px;
+  top: 773px;
+}
+
+.d-right {
+  position: inherit;
+  top: 48px;
+  left: 980px;
+  z-index: 0;
+}
+
+.d-left {
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  position: inherit;
+  top: 674px;
+  left: 0px;
+  z-index: 0;
+}
+
+.img38 {
+  position: inherit;
+  top: 120px;
+  left: 736px;
+  z-index: 1;
+}
+
+.img40 {
+  position: inherit;
+  top: 794px;
+  left: 147px;
+  z-index: 1;
+}
+
+

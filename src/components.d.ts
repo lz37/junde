@@ -8,9 +8,11 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Button: typeof import('./components/Button/index.tsx')['default']
+    Carousel: typeof import('./components/Carousel/index.tsx')['default']
     CHeader: typeof import('./components/CHeader/index.vue')['default']
     CHeaderInner: typeof import('./components/CHeaderInner/index.vue')['default']
     CLayout: typeof import('./components/CLayout/index.vue')['default']
+    DCard: typeof import('./components/DCard/index.tsx')['default']
     DImage: typeof import('./components/DImage/index.tsx')['default']
     ElAside: typeof import('element-plus/es')['ElAside']
     ElButton: typeof import('element-plus/es')['ElButton']
@@ -33,10 +35,10 @@ declare module '@vue/runtime-core' {
     Introduction: typeof import('./components/Introduction/index.tsx')['default']
     Layout: typeof import('./components/Layout/index.tsx')['default']
     Logo: typeof import('./components/logo/index.tsx')['default']
-    Menu: typeof import('./components/Menu/index.tsx')['default']
+    Menu: typeof import('./views/Menu/index.tsx')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    TextButton: typeof import('./components/Menu/TextButton/index.tsx')['default']
+    TextButton: typeof import('./views/Menu/TextButton/index.tsx')['default']
     Title: typeof import('./components/Introduction/Title/index.tsx')['default']
     Trans: typeof import('./components/Trans/index.tsx')['default']
   }

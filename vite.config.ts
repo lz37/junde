@@ -12,6 +12,7 @@ import { createHtmlPlugin } from 'vite-plugin-html'
 import Inspect from 'vite-plugin-inspect'
 import vueSetupExtend from 'vite-plugin-vue-setup-extend'
 import svgLoader from 'vite-svg-loader'
+
 function resolve(dir: string) {
   return path.join(__dirname, dir)
 }
@@ -22,10 +23,6 @@ export default function (): UserConfigExport {
   return {
     server: {
       host: '0.0.0.0', // 解决不能通过ip访问
-      proxy: {
-        '/api': 'http://api.beehub.paradeum.com:8110',
-        '/static': 'http://api.beehub.paradeum.com:8110'
-      }
     },
     css: {
       modules: {

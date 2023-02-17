@@ -1,5 +1,4 @@
-import { PropType, StyleValue, Transition, TransitionGroup } from 'vue'
-import DCard, { IconsTitle } from '@/components/DCard'
+import { PropType, StyleValue, Transition } from 'vue'
 import './trans.css'
 
 export default defineComponent({

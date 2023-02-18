@@ -13,6 +13,21 @@
   border-radius: 0px 100px 100px 20px;
 }
 
+.card-large {
+  /* Group 1089 */
+
+  width: 460px;
+  height: 369px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0px 100px 100px 20px;
+}
+
 .icon-place {
   /* Rectangle 503 */
 
@@ -41,5 +56,23 @@
   line-height: 36px;
   /* identical to box height */
   /* white */
+  color: #ffffff;
+}
+
+.content {
+  position: relative;
+  width: 396px;
+
+  top: 13px;
+  left: 32px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+
+  /* white */
+
   color: #ffffff;
 }

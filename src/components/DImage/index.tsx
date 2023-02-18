@@ -9,6 +9,10 @@ export default defineComponent({
       type: String as PropType<'left' | 'right'>,
       required: true
     },
+    mode: {
+      type: String as PropType<'big' | 'small'>,
+      default: 'big'
+    },
     size: {
       type: Object as PropType<{ w: string; h: string }>,
       required: true
@@ -25,7 +29,7 @@ export default defineComponent({
           width: props.size.w,
           height: props.size.h
         }}
-        class={`${style.img} ${style[props.forward]}`}
+        class={`${style.img} ${style[props.forward]} ${style[props.mode]}`}
       />
     )
   }

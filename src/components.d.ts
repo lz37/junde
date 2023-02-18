@@ -8,6 +8,7 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Button: typeof import('./components/Button/index.tsx')['default']
+    Card: typeof import('./components/Card/index.tsx')['default']
     Carousel: typeof import('./components/Carousel/index.tsx')['default']
     CHeader: typeof import('./components/CHeader/index.vue')['default']
     CHeaderInner: typeof import('./components/CHeaderInner/index.vue')['default']

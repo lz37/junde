@@ -12,6 +12,7 @@
   "dependencies": {
     "@babel/core": "^7.0.0-0",
     "axios": "^0.24.0",
+    "element-plus": "^2.2.32",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6",
     "vuex": "^4.1.0"

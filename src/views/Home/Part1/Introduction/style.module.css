@@ -1,0 +1,36 @@
+.card{
+  max-width: 460px;
+}
+
+.title {
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 60px;
+  /* or 136% */
+
+  /* black */
+
+  color: #333e63;
+}
+
+.content {
+  margin-top: 24px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+
+  /* black */
+
+  color: #333e63;
+}
+
+.button {
+  margin-top: 48px;
+}

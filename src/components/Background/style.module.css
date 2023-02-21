@@ -1,0 +1,11 @@
+.dark {
+  background: linear-gradient(180deg, #405285 0%, #2b3b65 100%);
+}
+
+.blue {
+  background: linear-gradient(180deg, #4e76d8 10.75%, #3859ab 100%);
+}
+
+.light {
+  background: #f3f6fa;
+}

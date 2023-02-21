@@ -11,15 +11,13 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
-    "skipLibCheck":true,
+    "skipLibCheck": true,
     "baseUrl": ".",
-    "types": [
-      "node",
-      "unplugin-icons/types/vue"
-    ],
+    "types": ["node", "unplugin-icons/types/vue", "element-plus/global"],
     "paths": {
-      "@/*":["src/*"]
-    }
+      "@/*": ["src/*"]
+    },
+    "forceConsistentCasingInFileNames": true
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
 }

@@ -1,0 +1,68 @@
+.background {
+  margin-top: 160px;
+  margin-left: 147px;
+}
+
+.to-join {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+
+  /* black */
+
+  color: #333e63;
+}
+
+.expertise {
+  margin-top: 24px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 54px;
+  /* identical to box height */
+
+  /* black */
+
+  color: #333e63;
+}
+
+.cards {
+  margin-top: 80px;
+}
+
+.card-holder {
+  width: 264px;
+  height: 158px;
+  margin-bottom: 60px;
+  margin-right: 30px;
+}
+
+.card {
+  margin-top: 0px;
+  height: 98px;
+  width: 98px;
+  border-radius: 0px 40px 40px 15px;
+  /* 内容居中 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title {
+  margin-top: 24px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  /* black */
+
+  color: #333e63;
+}

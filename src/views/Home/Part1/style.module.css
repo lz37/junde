@@ -1,0 +1,21 @@
+.part {
+  width: 100%;
+  background: #fff;
+  margin-left: 147px;
+  height: 1050px;
+}
+
+.d-right {
+  position: absolute;
+  top: 170px;
+  left: 65%;
+  z-index: 0;
+}
+
+.d-left {
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  position: absolute;
+  top: 796px;
+  left: 0px;
+  z-index: 0;
+}

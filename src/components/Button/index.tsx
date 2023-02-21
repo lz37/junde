@@ -1,18 +1,16 @@
 import { PropType, StyleValue } from 'vue'
 import redStyle from './red.module.css'
 import whiteStyle from './white.module.css'
-import textStyle from './text.module.css'
 
 const modeStyle = {
   red: redStyle,
-  white: whiteStyle,
-  text: textStyle
+  white: whiteStyle
 }
 
 export default defineComponent({
   props: {
     mode: {
-      type: String as PropType<'red' | 'white' | 'text'>,
+      type: String as PropType<'red' | 'white'>,
       required: true
     },
     buttonStyle: {

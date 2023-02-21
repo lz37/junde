@@ -12,8 +12,27 @@ const router: Router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'Home',
-      component: () => import('@/views/Home')
+      name: 'Layout',
+      component: () => import('@/views/Layout'),
+      redirect: '/home',
+      children: [
+        {
+          path: 'home',
+          name: 'Home',
+          component: () => import('@/views/Home')
+        },
+        {
+          path: 'services',
+          name: 'Services',
+          children: [
+            {
+              path: 'center',
+              name: 'Center',
+              component: () => import('@/views/Services/Center')
+            }
+          ]
+        }
+      ]
     }
   ]
 })

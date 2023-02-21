@@ -1,0 +1,44 @@
+:root {
+  --el-color-primary: #e23030;
+  --el-color-primary-light-3: #ff8c8c;
+  --el-color-primary-light-5: #ffd1d1;
+  --el-color-primary-light-7: #fff0f0;
+  --el-color-primary-light-8: #fff7f7;
+  --el-color-primary-light-9: #fffafa;
+  --el-color-primary-dark-2: #c92b2b;
+}
+
+.el-input__wrapper {
+  border-radius: 24px;
+  height: 56px;
+}
+
+.el-input__inner {
+  margin-left: 10px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* identical to box height, or 178% */
+  /* black */
+  color: #333e63;
+  opacity: 0.5;
+}
+
+.el-textarea__inner {
+  padding-left: 20px;
+  padding-top: 20px;
+  border-radius: 24px;
+  height: 290px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* identical to box height, or 178% */
+
+  /* black */
+
+  color: #333e63;
+}

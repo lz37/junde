@@ -1,0 +1,53 @@
+.card {
+  padding: 48px 56px 48px 56px;
+  height: 244px;
+  width: 409px;
+}
+
+.card-title {
+  height: 72px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+
+  /* black */
+
+  color: #333e63;
+}
+
+.card-content {
+  margin-top: 41px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+
+  /* black */
+
+  color: #333e63;
+}
+
+.line1 {
+  /* 同一行 */
+  display: flex;
+  flex-direction: row;
+}
+
+.line2 {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.img {
+  margin-top: 74px;
+  margin-left: 210px;
+}
+
+.hug-img{
+  margin-top: 100px;
+}

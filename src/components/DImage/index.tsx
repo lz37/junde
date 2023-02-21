@@ -1,3 +1,4 @@
+import { PropType, StyleValue } from 'vue'
 import style from './style.module.css'
 export default defineComponent({
   props: {
@@ -17,19 +18,26 @@ export default defineComponent({
       type: Object as PropType<{ w: string; h: string }>,
       required: true
     },
-    position: Object as PropType<{ x?: string; y?: string }>
+    position: Object as PropType<{ x?: string; y?: string }>,
+    style: Object as PropType<StyleValue>,
+    class: String
   },
   setup(props) {
     return () => (
       <div
         style={{
-          backgroundImage: `url('${props.img}')`,
-          backgroundPositionX: props.position?.x,
-          backgroundPositionY: props.position?.y,
-          width: props.size.w,
-          height: props.size.h
+          ...{
+            backgroundImage: `url('${props.img}')`,
+            backgroundPositionX: props.position?.x,
+            backgroundPositionY: props.position?.y,
+            width: props.size.w,
+            height: props.size.h
+          },
+          ...(props.style as object)
         }}
-        class={`${style.img} ${style[props.forward]} ${style[props.mode]}`}
+        class={`${style.img} ${style[props.forward]} ${style[props.mode]} ${
+          props.class
+        }`}
       />
     )
   }

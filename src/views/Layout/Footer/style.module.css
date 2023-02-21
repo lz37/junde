@@ -1,0 +1,162 @@
+
+.holder {
+  padding-top: 160px;
+  padding-left: 147px;
+  padding-right: 147px;
+  padding-bottom: 80px;
+}
+
+.title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+  /* identical to box height */
+
+  /* white */
+
+  color: #ffffff;
+}
+
+.sub-title {
+  max-width: 656px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+
+  /* white */
+
+  color: #ffffff;
+}
+
+.divider-vertical {
+  height: 700px;
+  opacity: 0.2;
+  border: 1px solid #ffffff;
+}
+
+.divider {
+  opacity: 0.2;
+  border: 1px solid #ffffff;
+}
+
+.tel {
+  margin-top: 32px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  /* identical to box height */
+
+  /* white */
+
+  color: #ffffff;
+}
+
+.leave-msg {
+  margin-top: 8px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* identical to box height, or 178% */
+
+  /* white */
+
+  color: #ffffff;
+}
+
+.holder-left {
+  margin-left: -32px;
+}
+
+.text-left {
+  margin-right: 32px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+
+  /* white */
+
+  color: #ffffff;
+}
+
+.subtitle-left {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  /* identical to box height, or 178% */
+
+  /* white */
+
+  color: #ffffff;
+}
+
+.skill-sets {
+  margin-top: 69px;
+}
+
+.foot-title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  /* identical to box height, or 178% */
+
+  /* white */
+
+  color: #ffffff;
+}
+
+.foot-content {
+  margin-top: 24px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* identical to box height, or 178% */
+
+  /* white */
+
+  color: #ffffff;
+}
+
+.location {
+  margin-right: 50px;
+  color: #ffffff;
+}
+
+.bottom {
+  margin-top: 45px;
+  /* 同一行 */
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-content {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  /* white */
+
+  color: #ffffff;
+
+  opacity: 0.5;
+}

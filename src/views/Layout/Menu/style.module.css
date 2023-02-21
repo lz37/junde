@@ -1,0 +1,52 @@
+.menu {
+  left: 0px;
+  top: 0px;
+  height: 122px;
+  background: #ffffff;
+  border:none
+}
+
+.icon {
+  margin-left: 147px;
+}
+
+.menu-item {
+  margin-left: 50px;
+}
+
+.menu-text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  /* identical to box height, or 160% */
+
+  /* black */
+
+  color: #333e63;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.sub-menu-text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  /* identical to box height, or 200% */
+
+  /* black */
+
+  color: #333e63;
+}
+
+.top42 {
+  margin-top: 42px;
+  display: inline-block;
+}

@@ -1,0 +1,39 @@
+.background {
+  width: 100%;
+  margin-top: 160px;
+  margin-left: 153px;
+}
+
+.title1 {
+  margin-top: 160px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+
+  /* black */
+
+  color: #333e63;
+}
+
+.title2 {
+  margin-top: 24px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 54px;
+  /* identical to box height */
+
+  /* black */
+
+  color: #333e63;
+}
+
+.cards {
+  margin-top: 80px;
+}

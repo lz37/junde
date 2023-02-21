@@ -4,7 +4,7 @@ import { Store, useStore as baseUseStore } from 'vuex'
 const { DEV } = import.meta.env
 
 export interface State {
-  count: number
+  isMobile: boolean
 }
 
 export const key: InjectionKey<Store<State>> = Symbol()
@@ -13,9 +13,13 @@ const store = createStore<State>({
   strict: true,
   plugins: DEV ? [createLogger()] : [],
   state: {
-    count: 0
+    isMobile: window.innerWidth < 1200
   },
-  mutations: {}
+  mutations: {
+    setMobile(state, isMobile: boolean) {
+      state.isMobile = isMobile
+    }
+  }
 })
 
 export default store

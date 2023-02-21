@@ -12,6 +12,7 @@ import { createHtmlPlugin } from 'vite-plugin-html'
 import Inspect from 'vite-plugin-inspect'
 import vueSetupExtend from 'vite-plugin-vue-setup-extend'
 import svgLoader from 'vite-svg-loader'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 function resolve(dir: string) {
   return path.join(__dirname, dir)
@@ -22,18 +23,18 @@ function resolve(dir: string) {
 export default function (): UserConfigExport {
   return {
     server: {
-      host: '0.0.0.0', // 解决不能通过ip访问
+      host: '0.0.0.0' // 解决不能通过ip访问
     },
     css: {
       modules: {
         generateScopedName: '[name]__[local]___[hash:base64:5]',
         hashPrefix: 'prefix',
-        localsConvention: 'camelCaseOnly'
+        localsConvention: 'camelCase'
       },
       preprocessorOptions: {
         scss: {
           // 自定义的主题色
-          additionalData: `@use "@/styles/element/index.scss" as *;`
+          // additionalData: `@use "@/styles/element/index.scss" as *;`
         }
       }
     },
@@ -57,7 +58,8 @@ export default function (): UserConfigExport {
           globalsPropValue: true // Default `true`, (true | false | 'readonly' | 'readable' | 'writable' | 'writeable')
         },
         imports: ['vue', 'vue-router', 'vuex', 'vue-i18n'],
-        dts: resolve('src/auto-imports.d.ts')
+        dts: resolve('src/auto-imports.d.ts'),
+        resolvers: [ElementPlusResolver()]
       }),
       Components({
         extensions: ['vue', 'tsx'],
@@ -66,7 +68,8 @@ export default function (): UserConfigExport {
           // 自动注册图标组件
           IconsResolver({
             enabledCollections: ['ep']
-          })
+          }),
+          ElementPlusResolver()
         ],
         dts: resolve('src/components.d.ts')
       }),

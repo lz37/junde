@@ -1,0 +1,186 @@
+.background {
+  width: 100%;
+}
+
+.holder {
+  margin-left: 147px;
+  padding-bottom: 160px;
+  padding-top: 160px;
+}
+
+.title1 {
+  padding-top: 32px;
+  height: 32px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+
+  /* black */
+
+  color: #333e63;
+}
+
+.title2 {
+  margin-top: 24px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+  /* identical to box height */
+
+  /* black */
+
+  color: #333e63;
+}
+
+.text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+
+  /* black */
+
+  color: #333e63;
+}
+
+.menu {
+  background-color: transparent;
+  margin-top: 72px;
+}
+
+.menu-title {
+  width: 240px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  /* black */
+
+  color: #333e63;
+}
+
+.imgs {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.img {
+  /* align to bottom */
+  margin-bottom: 0px;
+  margin-top: auto;
+}
+
+.and-we-have {
+  margin-top: 67.4px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* identical to box height, or 178% */
+
+  /* black */
+
+  color: #333e63;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.card {
+  margin-right: 30px;
+  width: 264px;
+  height: 200px;
+  /* 内容居中 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-title {
+  position: relative;
+  top: 27px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 84px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  background: linear-gradient(180deg, #7190fd 0%, #5b82e2 62.78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-content {
+  position: relative;
+  width: 198px;
+  top: 30px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+
+  /* black */
+
+  color: #333e63;
+}
+
+.question {
+  margin-top: 88px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  text-align: center;
+
+  /* black */
+
+  color: #333e63;
+}
+
+.button-holder {
+  /* 居中 */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  width: 265px;
+  margin-top: 32px;
+  padding: 16px 24px;
+  gap: 10px;
+}

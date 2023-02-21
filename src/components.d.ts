@@ -7,11 +7,13 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    Background: typeof import('./components/Background/index.tsx')['default']
     Button: typeof import('./components/Button/index.tsx')['default']
-    Card: typeof import('./components/Card/index.tsx')['default']
-    Carousel: typeof import('./components/Carousel/index.tsx')['default']
+    Card: typeof import('./views/Home/part3/Card/index.tsx')['default']
+    Carousel: typeof import('./views/Home/Part2/Carousel/index.tsx')['default']
     CHeader: typeof import('./components/CHeader/index.vue')['default']
     CHeaderInner: typeof import('./components/CHeaderInner/index.vue')['default']
+    Circle: typeof import('./components/Circle/index.tsx')['default']
     CLayout: typeof import('./components/CLayout/index.vue')['default']
     DCard: typeof import('./components/DCard/index.tsx')['default']
     DImage: typeof import('./components/DImage/index.tsx')['default']
@@ -33,14 +35,18 @@ declare module '@vue/runtime-core' {
     IEpList: typeof import('~icons/ep/list')['default']
     IEpUser: typeof import('~icons/ep/user')['default']
     Image: typeof import('./components/Image/index.tsx')['default']
-    Introduction: typeof import('./components/Introduction/index.tsx')['default']
+    Indedx: typeof import('./components/DCard/indedx.tsx')['default']
+    Input: typeof import('./components/Input/index.tsx')['default']
+    Introduction: typeof import('./views/Home/Part1/Introduction/index.tsx')['default']
     Layout: typeof import('./components/Layout/index.tsx')['default']
     Logo: typeof import('./components/logo/index.tsx')['default']
     Menu: typeof import('./views/Menu/index.tsx')['default']
+    NoShowMob: typeof import('./components/NoShowMob/index.tsx')['default']
+    NotShowMobile: typeof import('./components/NotShowMobile/index.tsx')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TextButton: typeof import('./views/Menu/TextButton/index.tsx')['default']
-    Title: typeof import('./components/Introduction/Title/index.tsx')['default']
+    Title: typeof import('./views/Home/Part1/Introduction/Title/index.tsx')['default']
     Trans: typeof import('./components/Trans/index.tsx')['default']
   }
 }

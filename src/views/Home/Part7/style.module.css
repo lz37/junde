@@ -1,8 +1,3 @@
-.background {
-  margin-top: 160px;
-  margin-left: 147px;
-}
-
 .to-join {
   font-family: 'Poppins';
   font-style: normal;
@@ -10,24 +5,19 @@
   font-size: 24px;
   line-height: 32px;
   /* identical to box height, or 133% */
-
   /* black */
-
   color: #333e63;
 }
 
 .expertise {
   margin-top: 24px;
-
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 54px;
   /* identical to box height */
-
   /* black */
-
   color: #333e63;
 }
 

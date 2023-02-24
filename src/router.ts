@@ -31,30 +31,25 @@ const router: Router = createRouter({
               component: () => import('@/views/Services/Center')
             }
           ]
+        },
+        {
+          path: 'about',
+          name: 'About',
+          component: () => import('@/views/About')
         }
       ]
     }
   ]
 })
 
-export function routerPush(to: RouteLocationRaw) {
-  router.push(to)
-}
+export const routerPush = (to: RouteLocationRaw) => router.push(to)
 
-export function routerReplace(to: RouteLocationRaw) {
-  router.replace(to)
-}
+export const routerReplace = (to: RouteLocationRaw) => router.replace(to)
 
-export function routerBack() {
-  router.back()
-}
+export const routerBack = () => router.back()
 
-export function routerForward() {
-  router.forward()
-}
+export const routerForward = () => router.forward()
 
-export function routerGo(delta: number) {
-  router.go(delta)
-}
+export const routerGo = (delta: number) => router.go(delta)
 
 export default router

@@ -1,0 +1,46 @@
+.item {
+  border-bottom: 1px solid rgb(51, 62, 99, 0.14);
+  padding: 0px 0px 34px 0px;
+  width: 100%;
+  margin-top: 34px;
+}
+
+.q {
+  /* 同一行 */
+  display: flex;
+  /* 上下居中 */
+  align-items: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  /* black */
+
+  color: #333e63;
+}
+
+.img-holder {
+  background: #f3f6fa;
+  width: 68px;
+  height: 56px;
+  margin-left: auto;
+  margin-right: 0px;
+  border-radius: 0px 25px 25px 10px;
+}
+
+.a {
+  margin-top: 24px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+
+  /* black */
+
+  color: #333e63;
+}

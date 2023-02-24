@@ -154,7 +154,7 @@ const cardInfos3: CardsInfo2 = [
 export default defineComponent({
   setup() {
     return () => (
-      <Background mode="light" class={style.background}>
+      <Background mode="light">
         <div class={style.title}>Team needs expanding</div>
         <SubTitle titles={titles1} style={{ marginTop: '80px' }} />
         <CArds

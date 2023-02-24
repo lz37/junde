@@ -3,10 +3,12 @@ import D from '@/assets/imgs/D.png'
 import Button from '@/components/Button'
 import DImage from '@/components/DImage'
 import img45 from '@/assets/imgs/45.png'
+import Background from '@/components/Background'
 export default defineComponent({
   setup() {
     return () => (
-      <div
+      <Background
+        mode="none"
         class={style.background}
         style={{
           background: `url(${D})`,
@@ -28,7 +30,7 @@ export default defineComponent({
           img={img45}
           size={{ w: '1040px', h: '440px' }}
         />
-      </div>
+      </Background>
     )
   }
 })

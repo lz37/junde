@@ -9,3 +9,11 @@
 .light {
   background: #f3f6fa;
 }
+
+.none {
+  background: #ffffff;
+}
+
+.common {
+  padding: 160px calc(50% - 573px) 160px calc(50% - 573px);
+}

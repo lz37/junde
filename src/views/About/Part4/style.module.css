@@ -1,0 +1,32 @@
+.title {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 66px;
+  /* identical to box height, or 194% */
+
+  /* black */
+
+  color: #333e63;
+}
+
+.sub-title {
+  margin-top: 24px;
+  max-width: 852px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+
+  /* black */
+
+  color: #333e63;
+}
+
+.holder{
+  margin-top: 60px;
+  display: flex;
+}

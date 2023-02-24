@@ -1,0 +1,58 @@
+.card {
+  background: #f3f6fa;
+  border-radius: 0px 150px 150px 50px;
+  /* 同一行 */
+  display: flex;
+}
+
+.card-text {
+  padding: 45px 30px 46px 48px;
+}
+
+.title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+  color: #333e63;
+}
+
+.img-holder {
+  width: 40px;
+  /* 居中对齐 */
+  display: flex;
+  justify-content: center;
+  margin-right: 39px;
+}
+
+.location-line,
+.tel-line,
+.email-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 1px;
+}
+
+.location-text,
+.tel-text,
+.email-text {
+  max-width: 450px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+
+  /* black */
+
+  color: #333e63;
+}
+
+.left-img {
+  border-radius: 0px 150px 150px 50px;
+}

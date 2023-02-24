@@ -11,11 +11,11 @@ export default defineComponent({
       }
     })
     return () => (
-      <>
+      <div>
         <Menu />
         <RouterView />
         <Footer />
-      </>
+      </div>
     )
   }
 })

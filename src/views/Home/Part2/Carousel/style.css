@@ -1,14 +1,27 @@
+.cards-holder ul {
+  white-space: nowrap;
+}
+
+.d-cards-buttons {
+  /* margin: 43px 0px auto auto; */
+  z-index: 0;
+  position: absolute;
+  left: 980px;
+  top: 350px;
+}
+
 .cards {
   /* children inline */
   display: inline-block;
   margin-right: 46px;
+  vertical-align: top;
 }
 
 /* 1. 声明过渡效果 */
 .carousel-move,
 .carousel-enter-active,
 .carousel-leave-active {
-  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.2s cubic-bezier(0.55, 0, 0.1, 1);
 }
 
 /* 2. 声明进入和离开的状态 */

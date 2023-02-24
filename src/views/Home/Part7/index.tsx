@@ -8,6 +8,7 @@ import financialAndSecurity from '@/assets/imgs/Financial_and_security.png'
 import ui_ux from '@/assets/imgs/UI_UX.png'
 import devOps from '@/assets/imgs/DevOps.png'
 import qa_testing from '@/assets/imgs/QA_Testing.png'
+import Background from '@/components/Background'
 const cardsInfos = [
   {
     title: 'Full-stack engineers',
@@ -55,7 +56,7 @@ const cardsInfos = [
 export default defineComponent({
   setup() {
     return () => (
-      <div class={style.background}>
+      <Background mode="none">
         <div class={style.toJoin}>Pre-vetted experts. Ready to join</div>
         <div class={style.expertise}>The expertise we have us to standby</div>
         <ElSpace class={style.cards} wrap>
@@ -76,7 +77,7 @@ export default defineComponent({
             </div>
           ))}
         </ElSpace>
-      </div>
+      </Background>
     )
   }
 })

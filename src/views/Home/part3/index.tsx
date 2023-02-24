@@ -7,11 +7,12 @@ import img6 from '@/assets/imgs/6.png'
 import img44 from '@/assets/imgs/44.png'
 import img8 from '@/assets/imgs/8.png'
 import { ElSpace } from 'element-plus'
+import Background from '@/components/Background'
 
 export default defineComponent({
   setup() {
     return () => (
-      <div class={style.background}>
+      <Background mode="none">
         <div class={style.title1}>
           Proven approach. Build your offshore development center
         </div>
@@ -117,7 +118,7 @@ export default defineComponent({
             }}
           </Card>
         </ElSpace>
-      </div>
+      </Background>
     )
   }
 })

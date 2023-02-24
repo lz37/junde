@@ -6,6 +6,7 @@
 
 .card-title {
   height: 72px;
+  width: 409px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -19,6 +20,7 @@
 
 .card-content {
   margin-top: 41px;
+  width: 409px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;

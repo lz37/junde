@@ -1,13 +1,13 @@
 import DCard, { IconsTitle } from './DCard'
-import { TransitionGroup } from 'vue'
+import { PropType, TransitionGroup } from 'vue'
 import './style.css'
+import Buttons from './Buttons'
 
-interface CardInfo {
+export interface CardInfo {
   title: IconsTitle
   info: string
 }
 
-// @todo 使用transition每次在首位删除再在结尾插入
 export default defineComponent({
   setup() {
     const cardsInfos: CardInfo[] = reactive([
@@ -41,24 +41,60 @@ export default defineComponent({
       }
     ])
     let tmpCard: CardInfo | undefined = undefined
-    onMounted(() => {
-      setInterval(() => {
+    const moveLeft = async () => {
+      const move = () => {
         if (tmpCard) {
           cardsInfos.push(tmpCard)
           tmpCard = undefined
         } else {
           tmpCard = cardsInfos.shift()
         }
-      }, 1000)
-    })
+      }
+      move()
+      //  停一秒
+      await new Promise((resolve) => {
+        setTimeout(resolve, 1000)
+      })
+      move()
+    }
+    const moveRight = async () => {
+      const move = () => {
+        if (tmpCard) {
+          cardsInfos.unshift(tmpCard)
+          tmpCard = undefined
+        } else {
+          tmpCard = cardsInfos.pop()
+        }
+      }
+      move()
+      //  停一秒
+      await new Promise((resolve) => {
+        setTimeout(resolve, 1000)
+      })
+      move()
+    }
+
     return () => (
-      <TransitionGroup tag="ul" name="carousel">
-        {cardsInfos.map((cardsInfo) => (
-          <DCard title={cardsInfo.title} class="cards" key={cardsInfo.title}>
-            {cardsInfo.info}
-          </DCard>
-        ))}
-      </TransitionGroup>
+      <div style={{ position: 'relative' }}>
+        <Buttons
+          class="d-cards-buttons"
+          onClickLeft={() => moveLeft()}
+          onClickRight={() => moveRight()}
+        />
+        <div class="cards-holder">
+          <TransitionGroup tag="ul" name="carousel">
+            {cardsInfos.map((cardsInfo) => (
+              <DCard
+                title={cardsInfo.title}
+                class="cards"
+                key={cardsInfo.title}
+              >
+                {cardsInfo.info}
+              </DCard>
+            ))}
+          </TransitionGroup>
+        </div>
+      </div>
     )
   }
 })

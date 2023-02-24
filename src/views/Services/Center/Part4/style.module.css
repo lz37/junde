@@ -1,0 +1,157 @@
+.background {
+  position: relative;
+  height: 768px;
+}
+
+.title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  /* identical to box height, or 133% */
+  /* black */
+  color: #333e63;
+}
+
+.card {
+  width: 41px;
+  height: 70px;
+  background: #f3f6fa;
+  padding: 14.41px 28.06px 13.59px 28.94px;
+  border-radius: 0px 50px 50px 25px;
+  margin-top: 10px;
+}
+
+.card-content {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 69px;
+  /* identical to box height, or 173% */
+  text-align: center;
+  /* blue */
+  color: #4066c7;
+}
+
+.content {
+  margin-top: 100px;
+}
+
+.info {
+  width: 624px;
+}
+
+.info-title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  /* black */
+
+  color: #333e63;
+}
+
+.info-content {
+  margin-top: 24px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+
+  /* black */
+
+  color: #333e63;
+}
+
+.card0 {
+  position: absolute;
+  top: 308px;
+}
+
+.info0 {
+  position: absolute;
+  top: 308px;
+  left: 130px;
+}
+
+.card1 {
+  position: absolute;
+  top: 512px;
+  left: 196px;
+}
+
+.info1 {
+  position: absolute;
+  top: 512px;
+  left: 326px;
+}
+
+.card2 {
+  position: absolute;
+  top: 716px;
+  left: 394px;
+}
+
+.info2 {
+  position: absolute;
+  top: 716px;
+  left: 522px;
+}
+
+.img0 {
+  position: absolute;
+  top: 703px;
+  left: 50px;
+}
+
+.img1 {
+  position: absolute;
+  top: 859px;
+  left: 152px;
+}
+
+.img2 {
+  position: absolute;
+  top: 616px;
+}
+
+.img3 {
+  position: absolute;
+  top: 407px;
+  left: 1095px;
+}
+
+.img4 {
+  position: absolute;
+  top: 276px;
+  left: 897px;
+}
+
+.img5 {
+  position: absolute;
+  top: 376px;
+  left: 14.94px;
+  height: 227px;
+}
+
+.img6 {
+  position: absolute;
+  top: 576px;
+  left: 208px;
+  height: 227px;
+}
+
+.line {
+  position: absolute;
+  top: 907px;
+  left: 42px;
+  width: 180px;
+  border: 1.6px solid #415486;
+}

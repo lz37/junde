@@ -1,6 +1,5 @@
 .background {
   margin-top: 160px;
-  height: 398px;
   /* 居中 */
   display: flex;
   flex-wrap: wrap;
@@ -17,8 +16,6 @@
 }
 
 .title {
-  position: relative;
-  top: 100px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;

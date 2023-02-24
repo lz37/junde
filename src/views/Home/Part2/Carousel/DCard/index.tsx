@@ -37,8 +37,8 @@ export default defineComponent({
   setup(props, { slots }) {
     const over = ref(false)
     return () => (
-      <div
-        class={over.value ? style.cardLarge : style.card}
+      <li
+        class={`${style.card} ${over.value ? style.cardLarge : ''}`}
         onMouseenter={() => {
           over.value = true
         }}
@@ -61,7 +61,7 @@ export default defineComponent({
             <div />
           )}
         </>
-      </div>
+      </li>
     )
   }
 })

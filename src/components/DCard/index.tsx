@@ -10,9 +10,16 @@ export default defineComponent({
     class: String,
     style: Object as PropType<StyleValue>
   },
-  setup(props, { slots }) {
+  emits: ['click'],
+  setup(props, { slots, emit }) {
     return () => (
-      <div class={`${style[props.mode]} ${props.class}`} style={props.style}>
+      <div
+        class={`${style[props.mode]} ${props.class}`}
+        style={props.style}
+        onClick={() => {
+          emit('click')
+        }}
+      >
         {slots.default?.()}
       </div>
     )

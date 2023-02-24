@@ -1,0 +1,32 @@
+.dialog {
+  border-radius: 0px 200px 200px 75px;
+  padding: 80px 100px 80px 100px;
+}
+
+.title {
+  max-width: 558px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 54px;
+  /* identical to box height */
+
+  /* black */
+
+  color: #333e63;
+}
+
+.sub-title {
+  max-width: 558px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+
+  /* black */
+
+  color: #333e63;
+}

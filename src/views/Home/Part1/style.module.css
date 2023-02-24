@@ -1,14 +1,22 @@
 .part {
-  width: 100%;
-  background: #fff;
-  margin-left: 147px;
   height: 1050px;
+  position: relative;
+}
+
+.line {
+  /* 同一行 */
+  display: flex;
+  margin-bottom: 151px;
+}
+
+.line-first{
+  margin-right: 120px;
 }
 
 .d-right {
   position: absolute;
   top: 170px;
-  left: 65%;
+  left: 980px;
   z-index: 0;
 }
 

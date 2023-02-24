@@ -1,0 +1,32 @@
+.buttons{
+  /* 同一行 */
+  display: flex;
+}
+
+.button-left {
+  border-radius: 28px 0px 0px 28px;
+}
+
+.arrow-left {
+  /* 右转左 */
+  transform: rotate(180deg);
+}
+
+.button-right {
+  border-radius: 0px 28px 28px 0px;
+}
+
+.button {
+  width: 84.02px;
+  height: 56px;
+  /* 子元素居中 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgba(44, 80, 166, 0.1) 0%,
+    #2c50a6 81.25%
+  );
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
+}

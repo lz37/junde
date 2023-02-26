@@ -1,5 +1,6 @@
 import { ElCol, ElForm, ElFormItem, ElInput, ElRow } from 'element-plus'
 import Button from '@/components/Button'
+import { PostformDataDeal as PostFormDataDeal } from '@/api'
 
 export default defineComponent({
   setup() {
@@ -38,7 +39,13 @@ export default defineComponent({
         </ElRow>
         <ElRow style={{ marginTop: '48px' }}>
           <ElCol span={23}>
-            <Button mode="red" style={{ width: '100%' }}>
+            <Button
+              mode="red"
+              style={{ width: '100%' }}
+              onClick={() => {
+                PostFormDataDeal(form)
+              }}
+            >
               Send Message
             </Button>
           </ElCol>

@@ -1,4 +1,5 @@
-import { PropType, StyleValue } from 'vue'
+import { PropType, StyleValue, withModifiers } from 'vue'
+import Dialog from '../Dialog'
 import redStyle from './red.module.css'
 import whiteStyle from './white.module.css'
 
@@ -13,21 +14,27 @@ export default defineComponent({
       type: String as PropType<'red' | 'white'>,
       required: true
     },
-    buttonStyle: {
-      type: Object as PropType<StyleValue | undefined>
-    }
+    buttonStyle: Object as PropType<StyleValue | undefined>,
+    onClick: Function
   },
-  emits: ['click'],
-  setup(props, { emit, slots }) {
+  setup(props, { slots }) {
+    const visible = ref(false)
     return () => (
       <div>
         <button
           class={modeStyle[props.mode].button}
-          onClick={() => emit('click')}
           style={props.buttonStyle}
+          onClick={withModifiers(() => {
+            if (props.onClick) props.onClick()
+            else visible.value = true
+          }, ['prevent'])}
         >
           <span class={modeStyle[props.mode].text}>{slots.default?.()}</span>
         </button>
+        <Dialog
+          visible={visible.value}
+          onClose={() => (visible.value = false)}
+        />
       </div>
     )
   }

@@ -1,5 +1,4 @@
 .title {
-  position: relative;
   max-width: 950px;
   font-family: 'Poppins';
   font-style: normal;
@@ -27,14 +26,14 @@
 
 .d-right {
   position: absolute;
-  top: 263px;
-  left: 980px;
+  top: 103px;
+  left: 833px;
   z-index: 0;
 }
 
 .d-left{
   position: absolute;
-  top: 823px;
+  top: 663px;
   left: 0px;
   transform: matrix(-1, 0, 0, 1, 0, 0);
   z-index: 0;

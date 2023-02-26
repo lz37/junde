@@ -129,6 +129,7 @@
 .location {
   margin-right: 50px;
   color: #ffffff;
+  text-decoration-line: underline;
 }
 
 .bottom {

@@ -2,7 +2,6 @@ import { ElSpace } from 'element-plus'
 import style from './style.module.css'
 import img1075 from '@/assets/imgs/1075.png'
 import DCard from '@/components/DCard'
-import Trans from '@/components/Trans'
 
 export default defineComponent({
   props: {

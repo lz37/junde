@@ -1,22 +1,3 @@
-.cards-holder ul {
-  white-space: nowrap;
-}
-
-.d-cards-buttons {
-  /* margin: 43px 0px auto auto; */
-  z-index: 0;
-  position: absolute;
-  left: calc(100vw - 40%);
-  top: 350px;
-}
-
-.cards {
-  /* children inline */
-  display: inline-block;
-  margin-right: 46px;
-  vertical-align: top;
-}
-
 /* 1. 声明过渡效果 */
 .carousel-move,
 .carousel-enter-active,

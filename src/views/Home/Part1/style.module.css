@@ -15,15 +15,15 @@
 
 .d-right {
   position: absolute;
-  top: 170px;
-  left: 980px;
+  top: 10px;
+  left: 833px;
   z-index: 0;
 }
 
 .d-left {
   transform: matrix(-1, 0, 0, 1, 0, 0);
   position: absolute;
-  top: 796px;
+  top: 636px;
   left: 0px;
   z-index: 0;
 }

@@ -63,15 +63,9 @@ export default defineComponent({
             <div>
               <div class={style.footTitle}>Locations</div>
               <div class={style.footContent}>
-                <a href="https://www.baidu.com" class={style.location}>
-                  SuZhou
-                </a>
-                <a href="https://www.baidu.com" class={style.location}>
-                  Beijing
-                </a>
-                <a href="https://www.baidu.com" class={style.location}>
-                  Shanghai
-                </a>
+                <a class={style.location}>SuZhou</a>
+                <a class={style.location}>Beijing</a>
+                <a class={style.location}>Shanghai</a>
               </div>
             </div>
           </ElCol>

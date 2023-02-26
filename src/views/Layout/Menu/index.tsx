@@ -10,11 +10,9 @@ import {
   ElSubMenu
 } from 'element-plus'
 import { routerPush } from '@/router'
-import Dialog from '@/components/Dialog'
 
 export default defineComponent({
   setup() {
-    const visible = ref(false)
     return () => (
       <ElAffix offset={0.01}>
         <ElRow class={style.background}>
@@ -22,8 +20,14 @@ export default defineComponent({
             <ElMenu
               mode="horizontal"
               class={style.menu}
-              onSelect={(index) => {
-                routerPush(index)
+              onSelect={async (index) => {
+                if (index === '/services/questions') {
+                  await routerPush('/services/center')
+                  // 跳转到 id services-center-qa
+                  window.location.hash = 'services-center-qa'
+                } else {
+                  routerPush(index)
+                }
               }}
             >
               <ElMenuItem index="/home" style={{ paddingRight: '50px' }}>
@@ -42,7 +46,7 @@ export default defineComponent({
                           Offshore Development Center
                         </span>
                       </ElMenuItem>
-                      <ElMenuItem index="/services/center">
+                      <ElMenuItem index="/services/questions">
                         <span class={style.subMenuText}>
                           Frequently asked questions
                         </span>
@@ -61,9 +65,6 @@ export default defineComponent({
               class={style.top42}
               mode="red"
               style={{ marginLeft: '20px' }}
-              onClick={() => {
-                visible.value = true
-              }}
             >
               Get in touch
             </Button>
@@ -76,10 +77,6 @@ export default defineComponent({
             </Button>
           </ElCol>
         </ElRow>
-        <Dialog
-          visible={visible.value}
-          onClose={() => (visible.value = false)}
-        ></Dialog>
       </ElAffix>
     )
   }

@@ -1,7 +1,7 @@
 .background {
   width: 100%;
   height: 744px;
-  margin-top: 160px;
+  position: relative;
 }
 
 .line{
@@ -23,6 +23,27 @@
 }
 
 .frame {
-  margin-top: 81px;
+  position: absolute;
+  top: 500px;
+  left: 5%;
   display: flex;
+}
+
+.cards-holder ul {
+  white-space: nowrap;
+}
+
+.d-cards-buttons {
+  /* margin: 43px 0px auto auto; */
+  z-index: 0;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.cards {
+  /* children inline */
+  display: inline-block;
+  margin-right: 46px;
+  vertical-align: top;
 }

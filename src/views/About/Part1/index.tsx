@@ -44,30 +44,36 @@ export default defineComponent({
   setup() {
     return () => (
       <Background mode="none">
-        <img src={D} alt="D-left" class={style.dLeft} />
-        <img src={D} alt="D-right" class={style.dRight} />
-        <div class={style.title}>
-          <b>Self-motivated developers</b> requires a{' '}
-          <b>collaborative working environment</b>.<br /> We are working on it.
-        </div>
-        <div class={style.holder1}>
-          <Text info={infos[0]} style={{ marginRight: '128px', zIndex: 10 }} />
-          <DImage
-            forward="right"
-            img={img46}
-            size={{ w: '558px', h: '460px' }}
-            position={{ x: '-40px' }}
-          />
-        </div>
-        <div class={style.holder2}>
-          <DImage
-            forward="left"
-            img={img47}
-            size={{ w: '558px', h: '460px' }}
-            style={{ marginRight: '128px', zIndex: 10 }}
-            position={{ x: '-40px' }}
-          />
-          <Text info={infos[0]} />
+        <div style={{ position: 'relative' }}>
+          <img src={D} alt="D-left" class={style.dLeft} />
+          <img src={D} alt="D-right" class={style.dRight} />
+          <div class={style.title}>
+            <b>Self-motivated developers</b> requires a{' '}
+            <b>collaborative working environment</b>.<br /> We are working on
+            it.
+          </div>
+          <div class={style.holder1}>
+            <Text
+              info={infos[0]}
+              style={{ marginRight: '128px', zIndex: 10 }}
+            />
+            <DImage
+              forward="right"
+              img={img46}
+              size={{ w: '558px', h: '460px' }}
+              position={{ x: '-40px' }}
+            />
+          </div>
+          <div class={style.holder2}>
+            <DImage
+              forward="left"
+              img={img47}
+              size={{ w: '558px', h: '460px' }}
+              style={{ marginRight: '128px', zIndex: 10 }}
+              position={{ x: '-40px' }}
+            />
+            <Text info={infos[0]} />
+          </div>
         </div>
       </Background>
     )

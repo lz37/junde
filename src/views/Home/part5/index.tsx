@@ -8,7 +8,6 @@ import DCard from '@/components/DCard'
 import Button from '@/components/Button'
 import { ElCol, ElMenu, ElMenuItem, ElRow } from 'element-plus'
 import Background from '@/components/Background'
-import { routerPush } from '@/router'
 export default defineComponent({
   setup() {
     const activeIndex = ref('1')

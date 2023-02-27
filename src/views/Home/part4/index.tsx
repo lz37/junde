@@ -5,7 +5,6 @@ import vector6 from '@/assets/imgs/Vector6.png'
 import ellipse10 from '@/assets/imgs/Ellipse10.png'
 import ellipse11 from '@/assets/imgs/Ellipse11.png'
 import Background from '@/components/Background'
-import { routerPush } from '@/router'
 
 const backgrounds = [
   { img: vector5, x: 88, y: 20 },

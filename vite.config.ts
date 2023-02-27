@@ -23,7 +23,14 @@ function resolve(dir: string) {
 export default function (): UserConfigExport {
   return {
     server: {
-      host: '0.0.0.0' // 解决不能通过ip访问
+      host: '0.0.0.0', // 解决不能通过ip访问
+      proxy: {
+        '/api': {
+          target: 'https://www.jundesoftware.com/api',
+          changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/api/, '')
+        }
+      }
     },
     css: {
       modules: {

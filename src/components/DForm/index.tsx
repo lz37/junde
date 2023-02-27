@@ -42,8 +42,9 @@ export default defineComponent({
             <Button
               mode="red"
               style={{ width: '100%' }}
-              onClick={() => {
-                PostFormDataDeal(form)
+              onClick={async () => {
+                const success = await PostFormDataDeal(form)
+                console.log(success)
               }}
             >
               Send Message

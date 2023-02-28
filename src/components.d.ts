@@ -19,6 +19,7 @@ declare module '@vue/runtime-core' {
     DForm: typeof import('./components/DForm/index.tsx')['default']
     Dialog: typeof import('./components/Dialog/index.tsx')['default']
     DImage: typeof import('./components/DImage/index.tsx')['default']
+    Document: typeof import('./components/Document/index.tsx')['default']
     ElAside: typeof import('element-plus/es')['ElAside']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']

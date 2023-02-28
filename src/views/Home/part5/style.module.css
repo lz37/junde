@@ -29,16 +29,20 @@
   color: #333e63;
 }
 
+.line{
+  margin-top: 60px;
+  display: flex;
+}
+
 .text {
+  margin-right: 30px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
   /* or 178% */
-
   /* black */
-
   color: #333e63;
 }
 
@@ -48,17 +52,12 @@
 }
 
 .menu-title {
-  width: 240px;
+  margin-bottom: 21px;
+  width: 184px;
   font-family: 'Poppins';
   font-style: normal;
-  font-weight: 400;
   font-size: 24px;
   line-height: 36px;
-  /* identical to box height */
-
-  /* black */
-
-  color: #333e63;
 }
 
 .imgs {
@@ -169,8 +168,9 @@
 }
 
 .button {
-  width: 265px;
+  width: 272px;
   margin-top: 32px;
   padding: 16px 24px;
   gap: 10px;
+  /* 居中 */
 }

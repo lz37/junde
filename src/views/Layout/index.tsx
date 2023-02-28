@@ -1,5 +1,6 @@
 import { useStore } from '@/store'
 import { RouterView } from 'vue-router'
+import BackTop from './BackTop'
 import Footer from './Footer'
 import Menu from './Menu'
 export default defineComponent({
@@ -15,6 +16,7 @@ export default defineComponent({
         <Menu />
         <RouterView />
         <Footer />
+        <BackTop />
       </div>
     )
   }

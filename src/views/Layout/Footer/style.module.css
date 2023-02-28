@@ -5,9 +5,7 @@
   font-size: 48px;
   line-height: 72px;
   /* identical to box height */
-
   /* white */
-
   color: #ffffff;
 }
 
@@ -19,20 +17,21 @@
   font-size: 18px;
   line-height: 32px;
   /* or 178% */
-
   /* white */
-
   color: #ffffff;
 }
 
 .divider-vertical {
-  height: 700px;
-  opacity: 0.2;
+  width: 700px;
+  opacity: 0.1;
   border: 1px solid #ffffff;
+  transform: rotate(90deg);
+  margin-top: 400px;
+  margin-left: -330px;
 }
 
 .divider {
-  opacity: 0.2;
+  opacity: 0.1;
   border: 1px solid #ffffff;
 }
 
@@ -44,9 +43,7 @@
   font-size: 32px;
   line-height: 48px;
   /* identical to box height */
-
   /* white */
-
   color: #ffffff;
 }
 
@@ -76,9 +73,7 @@
   font-size: 18px;
   line-height: 32px;
   /* or 178% */
-
   /* white */
-
   color: #ffffff;
 }
 
@@ -89,9 +84,7 @@
   font-size: 18px;
   line-height: 32px;
   /* identical to box height, or 178% */
-
   /* white */
-
   color: #ffffff;
 }
 
@@ -106,9 +99,7 @@
   font-size: 18px;
   line-height: 32px;
   /* identical to box height, or 178% */
-
   /* white */
-
   color: #ffffff;
 }
 
@@ -120,9 +111,7 @@
   font-size: 18px;
   line-height: 32px;
   /* identical to box height, or 178% */
-
   /* white */
-
   color: #ffffff;
 }
 
@@ -130,6 +119,7 @@
   margin-right: 50px;
   color: #ffffff;
   text-decoration-line: underline;
+  cursor: pointer;
 }
 
 .bottom {
@@ -146,10 +136,36 @@
   font-size: 12px;
   line-height: 18px;
   /* identical to box height */
-
   /* white */
-
   color: #ffffff;
-
   opacity: 0.5;
+}
+
+.pop-title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  /* identical to box height, or 160% */
+
+  /* black */
+
+  color: #333e63;
+}
+
+.pop-loc,
+.pop-tel,
+.pop-email {
+  margin-top: 12px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+
+  /* black */
+
+  color: #333e63;
 }

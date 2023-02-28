@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.menu-background-shadow {
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12);
+}
+
 .menu {
   min-width: 650px;
   height: 122px;
@@ -22,30 +26,19 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 32px;
-  /* identical to box height, or 160% */
-
-  /* black */
-
-  color: #333e63;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
 .sub-menu-text {
+  padding: 16px 15.5px 16px 24px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 32px;
   /* identical to box height, or 200% */
-
-  /* black */
-
-  color: #333e63;
 }
 
 .button-holder {
@@ -56,4 +49,16 @@
 
 .button {
   margin-top: 42px;
+}
+
+.red-arrow {
+  margin-left: 25.5px;
+  margin-bottom: 8px;
+}
+
+.blank-arrow {
+  margin-left: 25.5px;
+  margin-bottom: 8px;
+  width: 24px;
+  display: inline-block;
 }

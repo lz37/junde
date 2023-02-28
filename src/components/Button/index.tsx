@@ -16,12 +16,13 @@ export default defineComponent({
       required: true
     },
     buttonStyle: Object as PropType<StyleValue | undefined>,
-    onClick: Function
+    onClick: Function,
+    style: Object as PropType<StyleValue>
   },
   setup(props, { slots }) {
     const visible = ref(false)
     return () => (
-      <div>
+      <div style={props.style}>
         <button
           class={`${modeStyle[props.mode].button} ${style.button}`}
           style={props.buttonStyle}

@@ -36,13 +36,26 @@ const router: Router = createRouter({
           path: 'about',
           name: 'About',
           component: () => import('@/views/About')
+        },
+        {
+          path: '/privacy-policy',
+          name: 'Privacy',
+          component: () => import('@/views/Privacy')
+        },
+        {
+          path: '/terms-of-use',
+          name: 'Terms',
+          component: () => import('@/views/Terms')
         }
       ]
     }
   ]
 })
 
-export const routerPush = (to: RouteLocationRaw) => router.push(to)
+export const routerPush = async (to: RouteLocationRaw) => {
+  await router.push(to)
+  window.scrollTo(0, 0)
+}
 
 export const routerReplace = (to: RouteLocationRaw) => router.replace(to)
 

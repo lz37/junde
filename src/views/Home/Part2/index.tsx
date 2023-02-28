@@ -1,8 +1,8 @@
 import style from './style.module.css'
 import img1092 from '@/assets/imgs/1092.png'
 import Background from '@/components/Background'
-import Buttons from './Carousel/Buttons'
-import DCard, { IconsTitle } from './Carousel/DCard'
+import Buttons from './Buttons'
+import DCard, { IconsTitle } from './DCard'
 import { TransitionGroup } from 'vue'
 import './style.css'
 
@@ -60,21 +60,15 @@ export default defineComponent({
       })
       move()
     }
+    const length = cardsInfos.length
     const moveRight = async () => {
-      const move = () => {
-        if (tmpCard) {
-          cardsInfos.unshift(tmpCard)
-          tmpCard = undefined
-        } else {
-          tmpCard = cardsInfos.pop()
-        }
-      }
-      move()
+      if (length !== cardsInfos.length) return
+      cardsInfos.unshift(cardsInfos[cardsInfos.length - 1])
       //  停一秒
       await new Promise((resolve) => {
         setTimeout(resolve, 1000)
       })
-      move()
+      cardsInfos.pop()
     }
     return () => (
       <Background

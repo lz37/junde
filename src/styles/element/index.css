@@ -43,15 +43,16 @@
 
 .el-menu--horizontal > .el-sub-menu.is-active .el-sub-menu__title {
   border-bottom: none;
-  color: var(--el-menu-active-color);
 }
 
 .el-menu--horizontal > .el-sub-menu .el-sub-menu__title {
   border-bottom: none;
-  color: var(--el-menu-active-color);
 }
 
-.el-menu-item{
+.el-menu-item {
   background-color: transparent !important;
 }
 
+.el-menu--horizontal > .el-menu-item.is-active {
+  font-weight: 700;
+}

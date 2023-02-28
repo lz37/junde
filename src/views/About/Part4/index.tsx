@@ -18,7 +18,7 @@ const locInfos = [
   {
     title: 'Shanghai',
     location:
-      'Beijing Sun Flower Tower,17th Floor,37 Maizidian St,Chaoyang,Beijing,China 100125',
+      'Room 209, #5 Building, No. 1999 FengHong Road, Minghang District, Shanghai',
     tel: '4000-632-978',
     email: 'sales@jundesoftware.com',
     img: img16

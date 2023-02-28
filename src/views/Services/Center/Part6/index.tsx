@@ -105,11 +105,17 @@ const questionsInfos: { q: JSX.Element; a: JSX.Element }[] = [
       <>
         Software product development outsourcing is not risky at all if you
         outsource your project to a reliable company. JUNDE ensures IP& data
-        protection in the following ways: We sign a Non-Disclosure Agreement
-        (NDA) We meet special industry regulations etc. We follow secure coding
-        and data protection practices We establish firewalls, encryption, and
-        VPN services to prevent online security breaches All our employees are
-        strictly verified before recruitment
+        protection in the following ways:
+        <ul style={{ marginTop: '0px' }}>
+          <li>We sign a Non-Disclosure Agreement (NDA)</li>
+          <li>We meet special industry regulations etc.</li>
+          <li>We follow secure coding and data protection practices</li>
+          <li>
+            We establish firewalls, encryption, and VPN services to prevent
+            online security breaches
+          </li>
+          <li>All our employees are strictly verified before recruitment</li>
+        </ul>
       </>
     )
   },

@@ -22,11 +22,11 @@
 }
 
 .divider-vertical {
-  width: 700px;
+  width: 695px;
   opacity: 0.1;
   border: 1px solid #ffffff;
   transform: rotate(90deg);
-  margin-top: 400px;
+  margin-top: 375px;
   margin-left: -330px;
 }
 
@@ -141,6 +141,10 @@
   opacity: 0.5;
 }
 
+.pop-container {
+  padding: 24px;
+}
+
 .pop-title {
   font-family: 'Poppins';
   font-style: normal;
@@ -158,14 +162,13 @@
 .pop-tel,
 .pop-email {
   margin-top: 12px;
+  word-break: keep-all;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
   /* or 178% */
-
   /* black */
-
   color: #333e63;
 }

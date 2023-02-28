@@ -1,4 +1,3 @@
-import Background from '@/components/Background'
 import Document from '@/components/Document'
 
 export default defineComponent({

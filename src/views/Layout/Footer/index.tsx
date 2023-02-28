@@ -15,8 +15,8 @@ const locations = [
     reference: 'SuZhou',
     loc: (
       <>
-        10-301, Creative Industry Park, 328 Xinghu Street, SIP Suzhou, Jiangsu,
-        215123 China
+        10-301, Creative Industry Park, 328 Xinghu Street,
+        <br /> SIP Suzhou, Jiangsu, 215123 China
       </>
     ),
     tel: <>4000-632-978</>,
@@ -27,6 +27,7 @@ const locations = [
     loc: (
       <>
         Beijing Sun Flower Tower,17th Floor,37 Maizidian
+        <br />
         St,Chaoyang,Beijing,China 100125
       </>
     ),
@@ -37,8 +38,8 @@ const locations = [
     reference: 'Shanghai',
     loc: (
       <>
-        Room 209, #5 Building, No. 1999 FengHong Road, Minghang District,
-        Shanghai
+        Room 209, #5 Building, No. 1999 FengHong Road,
+        <br /> Minghang District, Shanghai
       </>
     ),
     tel: <>4000-632-978</>,
@@ -110,20 +111,24 @@ export default defineComponent({
                     content="1"
                     trigger="hover"
                     width={345}
+                    popperStyle={{
+                      borderRadius: '15px',
+                      boxShadow: '0px 0px 16px rgba(0, 0, 0, 0.24);'
+                    }}
                   >
                     {{
                       reference: (
                         <a class={style.location}>{location.reference}</a>
                       ),
                       default: (
-                        <>
+                        <div class={style.popContainer}>
                           <div class={style.popTitle}>{location.reference}</div>
                           <div class={style.popLoc}>{location.loc}</div>
                           <div class={style.popTel}>Tel: {location.tel}</div>
                           <div class={style.popEmail}>
                             Email: {location.email}
                           </div>
-                        </>
+                        </div>
                       )
                     }}
                   </ElPopover>

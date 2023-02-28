@@ -1,22 +1,19 @@
-.background{
-  background: #ffffff;
-  width: 100%;
+.line {
+  display: flex;
 }
 
 .menu {
-  left: 0px;
-  top: 0px;
+  min-width: 650px;
   height: 122px;
   background: #ffffff;
-  border:none
-}
-
-.icon {
-  margin-left: 147px;
+  border: none;
+  border: none !important;
 }
 
 .menu-item {
   margin-left: 50px;
+  background-color: #ffffff !important;
+  border: none !important;
 }
 
 .menu-text {
@@ -51,7 +48,12 @@
   color: #333e63;
 }
 
-.top42 {
+.button-holder {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button {
   margin-top: 42px;
-  display: inline-block;
 }

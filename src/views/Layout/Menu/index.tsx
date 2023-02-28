@@ -1,22 +1,25 @@
 import Icon from '@/assets/imgs/junde-icon.png'
 import style from './style.module.css'
 import Button from '@/components/Button'
-import {
-  ElAffix,
-  ElCol,
-  ElMenu,
-  ElMenuItem,
-  ElRow,
-  ElSubMenu
-} from 'element-plus'
+import { ElAffix, ElMenu, ElMenuItem, ElSubMenu } from 'element-plus'
 import { routerPush } from '@/router'
+import Background from '@/components/Background'
 
 export default defineComponent({
   setup() {
     return () => (
-      <ElAffix offset={0.01}>
-        <ElRow class={style.background}>
-          <ElCol lg={16} md={24} sm={24} xs={24}>
+      <ElAffix
+        offset={0.01}
+        style={{
+          width: '100%',
+          boxShadow: '0px 4px 24px rgba(0, 0, 0, 0.12);'
+        }}
+      >
+        <Background
+          mode="none"
+          style={{ paddingTop: '0px', paddingBottom: '0px' }}
+        >
+          <div class={style.line}>
             <ElMenu
               mode="horizontal"
               class={style.menu}
@@ -26,12 +29,16 @@ export default defineComponent({
                   // 跳转到 id services-center-qa
                   window.location.hash = 'services-center-qa'
                 } else {
-                  routerPush(index)
+                  await routerPush(index)
                 }
               }}
             >
-              <ElMenuItem index="/home" style={{ paddingRight: '50px' }}>
-                <img src={Icon} alt="icon" class={style.icon} />
+              <ElMenuItem
+                index="/home"
+                style={{ paddingRight: '50px' }}
+                class={style.menuItem}
+              >
+                <img src={Icon} alt="icon" />
               </ElMenuItem>
               <ElMenuItem index="/home" class={style.menuItem}>
                 <span class={style.menuText}>Home</span>
@@ -59,24 +66,24 @@ export default defineComponent({
                 <span class={style.menuText}>About</span>
               </ElMenuItem>
             </ElMenu>
-          </ElCol>
-          <ElCol lg={8} md={0} sm={0} xs={0}>
-            <Button
-              class={style.top42}
-              mode="red"
-              style={{ marginLeft: '20px' }}
-            >
-              Get in touch
-            </Button>
-            <Button
-              class={style.top42}
-              style={{ marginLeft: '16px' }}
-              mode="white"
-            >
-              Tel:400-3444-5555
-            </Button>
-          </ElCol>
-        </ElRow>
+            <div class={style.buttonHolder}>
+              <Button
+                class={style.button}
+                mode="red"
+                style={{ marginLeft: '20px' }}
+              >
+                Get in touch
+              </Button>
+              <Button
+                class={style.button}
+                style={{ marginLeft: '16px' }}
+                mode="white"
+              >
+                Tel:400-3444-5555
+              </Button>
+            </div>
+          </div>
+        </Background>
       </ElAffix>
     )
   }

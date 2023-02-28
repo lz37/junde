@@ -1,11 +1,13 @@
 .card{
-  margin-right: 60px;
-  max-width: 462px;
+  margin-right: 12px;
+  margin-bottom: 80px;
+  max-width: 362px;
 }
 
 .title {
   position: relative;
   top: 36px;
+  min-height: 72px;
 
   font-family: 'Poppins';
   font-style: normal;
@@ -19,17 +21,16 @@
 }
 
 .content {
+  min-height: 192px;
+  margin-top: 16px;
   position: relative;
   top: 26px;
-
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
   /* or 178% */
-
   /* black */
-
   color: #333e63;
 }

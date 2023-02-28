@@ -37,8 +37,21 @@
   font-size: 18px;
   line-height: 32px;
   /* identical to box height, or 178% */
-
   /* black */
-
   color: #333e63;
 }
+
+.el-menu--horizontal > .el-sub-menu.is-active .el-sub-menu__title {
+  border-bottom: none;
+  color: var(--el-menu-active-color);
+}
+
+.el-menu--horizontal > .el-sub-menu .el-sub-menu__title {
+  border-bottom: none;
+  color: var(--el-menu-active-color);
+}
+
+.el-menu-item{
+  background-color: transparent !important;
+}
+

@@ -7,11 +7,49 @@ body {
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: url(@/assets/fonts/OpenSans-Medium.ttf);
+  font-family: 'Poppins';
+  src: url(@/assets/fonts/Poppins/Poppins-Regular.ttf);
+  font-weight: 400;
 }
 
 @font-face {
   font-family: 'Poppins';
-  src: url(@/assets/fonts/Poppins-Medium.ttf);
+  src: url(@/assets/fonts/Poppins/Poppins-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url(@/assets/fonts/Poppins/Poppins-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url(@/assets/fonts/Poppins/Poppins-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(@/assets/fonts/OpenSans/OpenSans-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(@/assets/fonts/OpenSans/OpenSans-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(@/assets/fonts/OpenSans/OpenSans-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(@/assets/fonts/OpenSans/OpenSans-Bold.ttf);
+  font-weight: 700;
 }

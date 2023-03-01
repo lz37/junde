@@ -87,8 +87,8 @@ export default defineComponent({
           </div>
           <Buttons
             class={style.dCardsButtons}
-            onClickLeft={() => moveLeft()}
-            onClickRight={() => moveRight()}
+            onClickLeft={() => moveRight()}
+            onClickRight={() => moveLeft()}
           />
         </div>
         <div class={style.frame}>

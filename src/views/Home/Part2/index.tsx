@@ -85,11 +85,6 @@ export default defineComponent({
             </p>
             <img src={img1092} alt="img 1092" class={style.img} />
           </div>
-          <Buttons
-            class={style.dCardsButtons}
-            onClickLeft={() => moveRight()}
-            onClickRight={() => moveLeft()}
-          />
         </div>
         <div class={style.frame}>
           <div style={{ position: 'relative' }}>
@@ -108,6 +103,11 @@ export default defineComponent({
             </div>
           </div>
         </div>
+        <Buttons
+          class={style.dCardsButtons}
+          onClickLeft={() => moveRight()}
+          onClickRight={() => moveLeft()}
+        />
       </Background>
     )
   }

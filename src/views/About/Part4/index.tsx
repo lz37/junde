@@ -1,7 +1,7 @@
 import Background from '@/components/Background'
 import LocCard from '@/components/LocCard'
 import style from './style.module.css'
-import img15 from '@/assets/imgs/15.png'
+import img51 from '@/assets/imgs/51.png'
 import img16 from '@/assets/imgs/16.png'
 import img17 from '@/assets/imgs/17.png'
 import { ElSpace } from 'element-plus'
@@ -13,7 +13,7 @@ const locInfos = [
       '10-301, Creative Industry Park, 328 Xinghu Street, SIP Suzhou, Jiangsu, 215123 China',
     tel: '4000-632-978',
     email: 'sales@jundesoftware.com',
-    img: img15
+    img: img51
   },
   {
     title: 'Shanghai',
@@ -21,7 +21,7 @@ const locInfos = [
       'Room 209, #5 Building, No. 1999 FengHong Road, Minghang District, Shanghai',
     tel: '4000-632-978',
     email: 'sales@jundesoftware.com',
-    img: img16
+    img: img17
   },
   {
     title: 'Beijing',
@@ -29,7 +29,7 @@ const locInfos = [
       'Beijing Sun Flower Tower,17th Floor,37 Maizidian St,Chaoyang,Beijing,China 100125',
     tel: '4000-632-978',
     email: 'sales@jundesoftware.com',
-    img: img17
+    img: img16
   }
 ]
 

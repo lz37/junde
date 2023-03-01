@@ -162,7 +162,10 @@ export default defineComponent({
                 <img
                   src={social1}
                   alt="social1"
-                  style={{ marginRight: '20px' }}
+                  style={{ marginRight: '20px', cursor: 'pointer' }}
+                  onClick={() => {
+                    window.open('https://weibo.com/u/3176576271')
+                  }}
                 />
                 <img src={social2} alt="social1" />
               </div>

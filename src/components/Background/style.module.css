@@ -16,4 +16,11 @@
 
 .common {
   padding: 160px calc(50% - 573px) 160px calc(50% - 573px);
+  min-width: 1146px;
+}
+
+@media screen and (max-width: 1200px) {
+  .common {
+    padding: 160px 27px 160px 27px;
+  }
 }

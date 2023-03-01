@@ -123,13 +123,14 @@ const cardInfos3: CardsInfo2 = [
   {
     title: (
       <>
-        <b>Full-time</b> working and be reliable
+        <b>Communication</b> tools
       </>
     ),
     content: (
       <>
-        Every developer is fully dedicated to you and no distraction from JUNDE.
-        They focus on the results rather than the hours they spend.
+        The developers are flexible of using different tools for seamless
+        communication with you, they can always be online connected via Video
+        Call, Email or Chat Message.
       </>
     ),
     forward: 'right'
@@ -137,14 +138,14 @@ const cardInfos3: CardsInfo2 = [
   {
     title: (
       <>
-        Full collaboration with your <b>in-house team</b>
+        <b>Project management</b> tools
       </>
     ),
     content: (
       <>
-        The developer plays as a part of your in-house team, integrates with
-        your working culture, and grows with the team together for better
-        software.
+        JIRA, Trello, Confluence, etc. can be used to track the efforts each
+        developer makes, and everything is totally up to date between you and
+        your ODC team.
       </>
     ),
     forward: 'left'

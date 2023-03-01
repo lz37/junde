@@ -72,7 +72,7 @@ export default defineComponent({
               style={{ marginRight: '128px', zIndex: 10 }}
               position={{ x: '-40px' }}
             />
-            <Text info={infos[0]} />
+            <Text info={infos[1]} />
           </div>
         </div>
       </Background>

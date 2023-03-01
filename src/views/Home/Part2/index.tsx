@@ -24,15 +24,15 @@ export default defineComponent({
       },
       {
         title: 'Financial Platform',
-        info: 'Management efficiency improved with 5 remote-working developers.'
+        info: '1. : Maintain and enhance an existing live product to help add robustness and reliability 24x7.'
       },
       {
         title: 'Self-storage Management',
-        info: 'System used for students’ management, it is evolved agile development practices helped customized the solution for different schools. Up to 24+ education districts are using it, behind this are 4 remote-working developers.'
+        info: 'Management efficiency improved with 5 remote-working developers.'
       },
       {
         title: 'Education',
-        info: '1. : Maintain and enhance an existing live product to help add robustness and reliability 24x7.'
+        info: 'System used for students’ management, it is evolved agile development practices helped customized the solution for different schools. Up to 24+ education districts are using it, behind this are 4 remote-working developers.'
       },
       {
         title: 'Sports',

@@ -143,7 +143,7 @@ export default defineComponent({
                 style={{ marginLeft: '16px' }}
                 mode="white"
               >
-                Tel:400-3444-5555
+                Tel:4000-632-978
               </Button>
             </div>
           </div>

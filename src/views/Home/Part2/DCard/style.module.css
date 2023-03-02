@@ -61,11 +61,3 @@
   color: #ffffff;
 }
 
-@media screen and (max-width: 1200px) {
-  .card {
-    /* Group 1089 */
-    width: 260px;
-    height: 233px;
-    border-radius: 0px 50px 50px 10px;
-  }
-}

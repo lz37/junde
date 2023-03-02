@@ -87,20 +87,18 @@ export default defineComponent({
           </div>
         </div>
         <div class={style.frame}>
-          <div style={{ position: 'relative' }}>
-            <div class={style.cardsHolder}>
-              <TransitionGroup tag="ul" name="carousel">
-                {cardsInfos.map((cardsInfo) => (
-                  <DCard
-                    title={cardsInfo.title}
-                    class={style.cards}
-                    key={cardsInfo.title}
-                  >
-                    {cardsInfo.info}
-                  </DCard>
-                ))}
-              </TransitionGroup>
-            </div>
+          <div class={style.cardsHolder}>
+            <TransitionGroup tag="ul" name="carousel">
+              {cardsInfos.map((cardsInfo) => (
+                <DCard
+                  title={cardsInfo.title}
+                  class={style.cards}
+                  key={cardsInfo.title}
+                >
+                  {cardsInfo.info}
+                </DCard>
+              ))}
+            </TransitionGroup>
           </div>
         </div>
         <Buttons

@@ -2,7 +2,7 @@
   position: relative;
 }
 
-.line{
+.line {
   display: flex;
 }
 
@@ -27,6 +27,7 @@
 
 .cards-holder ul {
   white-space: nowrap;
+  padding: 0px;
 }
 
 .d-cards-buttons {

@@ -3,7 +3,8 @@ import Button from '@/components/Button'
 import { PostformDataDeal as PostFormDataDeal } from '@/api'
 
 export default defineComponent({
-  setup() {
+  emits: ['submit'],
+  setup(_, { emit }) {
     const form = reactive({
       name: '',
       companyName: '',
@@ -44,7 +45,16 @@ export default defineComponent({
               style={{ width: '100%' }}
               onClick={async () => {
                 const success = await PostFormDataDeal(form)
-                console.log(success)
+                if (success) {
+                  // 跳转到页面顶部
+                  form.name = ''
+                  form.companyName = ''
+                  form.email = ''
+                  form.telephone = ''
+                  form.need = ''
+                  emit('submit')
+                  window.scrollTo(0, 0)
+                }
               }}
             >
               Send Message

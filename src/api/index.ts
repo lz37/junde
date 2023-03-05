@@ -1,5 +1,4 @@
 import axios from 'axios'
-import { ElMessage } from 'element-plus'
 
 const baseURL = 'https://www.jundesoftware.com/api/contactus'
 export const PostformDataDeal = async (form: {
@@ -25,16 +24,13 @@ export const PostformDataDeal = async (form: {
       content
     })
     if (data.status === 1) {
-      ElMessage.success('Thank you!')
       return true
     } else {
       console.error(data.msg)
-      ElMessage.error(data.msg)
       return false
     }
   } catch (error) {
     console.error(error)
-    ElMessage.error(error as Error)
     return false
   }
 }

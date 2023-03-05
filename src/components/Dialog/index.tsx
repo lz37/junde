@@ -24,7 +24,11 @@ export default defineComponent({
           Tell us how we can assist you and one of our experienced thought
           leaders will get in touch shortly.
         </div>
-        <DForm></DForm>
+        <DForm
+          onSubmit={() => {
+            emit('close')
+          }}
+        />
       </ElDialog>
     )
   }

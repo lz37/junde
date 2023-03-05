@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { ElMessage } from 'element-plus'
 
-const baseURL = '/api/contactus'
+const baseURL = 'https://www.jundesoftware.com/api/contactus'
 export const PostformDataDeal = async (form: {
   name: string
   companyName: string

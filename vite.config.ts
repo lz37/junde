@@ -6,7 +6,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import Icons from 'unplugin-icons/vite'
 import Components from 'unplugin-vue-components/vite'
-import type { UserConfigExport } from 'vite'
+import { defineConfig, loadEnv } from 'vite'
 import eslintPlugin from 'vite-plugin-eslint'
 import { createHtmlPlugin } from 'vite-plugin-html'
 import Inspect from 'vite-plugin-inspect'
@@ -20,10 +20,12 @@ function resolve(dir: string) {
 
 // https://vitejs.dev/config/
 
-export default function (): UserConfigExport {
-  return {
+export default ({ mode }) => {
+  const env = loadEnv(mode, process.cwd())
+  return defineConfig({
+    base: env.BASE_URL,
     server: {
-      host: '0.0.0.0', // 解决不能通过ip访问
+      host: '0.0.0.0' // 解决不能通过ip访问
     },
     css: {
       modules: {
@@ -87,5 +89,5 @@ export default function (): UserConfigExport {
         '@': resolve('./src')
       }
     }
-  }
+  })
 }

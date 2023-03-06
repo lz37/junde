@@ -126,7 +126,11 @@ export default defineComponent({
                   )
                 }}
               </ElSubMenu>
-              <ElMenuItem index="/about" class={style.menuItem}>
+              <ElMenuItem
+                index="/about"
+                class={style.menuItem}
+                style={{ marginLeft: '35px' }}
+              >
                 <span class={style.menuText}>About</span>
               </ElMenuItem>
             </ElMenu>
